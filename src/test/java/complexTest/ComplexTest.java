@@ -50,6 +50,10 @@ public class ComplexTest {
 		ts.add(r4);
 		assert(r1.getArea()==(((TreeSet<Rectangle>) ts).first()).getArea());
 		System.out.println(ts.size() + " items in TreeSet.");
+		ts.remove(r3);
+		assert(ts.size() == 3);
+		System.out.println("TreeSet has " + ts.size() + " items left.");
+		
 	}
 	
 	@Test
@@ -84,6 +88,7 @@ public class ComplexTest {
 		al.add(r3);
 		al.add(r4);
 		al.add(r1);
+		assert(al.size() == 4);
 		System.out.println(al.size() + " items in ArrayList.");
 		
 		//testing LINKED list

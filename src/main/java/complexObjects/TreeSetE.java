@@ -18,7 +18,5 @@ public class TreeSetE {
 		ts.add(r3);
 		ts.add(r4);
 		System.out.println("TreeSet size after addition: " + ts.size());
-		ts.remove(r2);
-		System.out.println("New TreeSet size: " + ts.size());
 		}
 	}
